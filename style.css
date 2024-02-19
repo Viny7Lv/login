@@ -7,10 +7,19 @@
     font-family: 'poppins', sans-serif;
 }
 
-body {
+.container {
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    background-image: url(159Z_2107.w026.n002.628B.p1.628.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
     min-height: 100vh;
     background-image: url(159Z_2107.w026.n002.628B.p1.628.jpg);
     background-repeat: no-repeat;
@@ -142,16 +151,12 @@ button:hover {
 }
 
 footer {
-    margin-top: 100px;
-    display: block;
     position: absolute;
+    margin-top: 50px;
+    display: block;
     bottom: 1vh;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
     padding: 10px;
     color: #fff;
-    backdrop-filter: blur(55px);
     font-size: 1rem;
 }
 
@@ -162,10 +167,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-@media (max-height: 600px) {
-    body {
-        align-items: normal;
-    }
 }
